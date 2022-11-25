@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 /** 1. Normalize
 --------------------------------------------------------------*/
+:root {
+  --primary: rgb(26, 155, 77);
+}
 html, body {
   position: relative;
   width: 100%;
@@ -218,7 +221,7 @@ a {
   color: #111;
 }
 a:hover {
-  color: #ce3c83;
+  color: var(--primary);
   text-decoration: none;
 }
 .light a {
@@ -250,13 +253,13 @@ ul li, ol li {
   outline: 0;
 }
 ul li.active a{
-  color: #ce3c83;
+  color: var(--primary);
 }
 ul li a{
   color: #151515;
 }
 ul li a:hover{
-  color: #ce3c83;
+  color: var(--primary);
   text-decoration: none;
 }
 ul li:last-child,
@@ -308,12 +311,12 @@ img {
   vertical-align: middle;
 }
 ::selection {
-  background: rgb(206 60 131);
+  background: var(--primary);
   color: #fff;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: rgb(206 60 131);
+  background: var(--primary);
   color: #fff;
   text-shadow: none;
 }
@@ -451,7 +454,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 h2 a:hover, h3 a:hover {
-  color: #ce3c83;
+  color: var(--primary);
   text-decoration: none;
 }
 .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light span, .light div, .light ul {
@@ -596,7 +599,7 @@ abbr {
   text-transform: uppercase;
 }
 .highlight {
-  background-color: #ce3c83;
+  background-color: var(--primary);
   color: #fff;
   padding: 2px 10px;
   font-size: 90%;
@@ -612,10 +615,10 @@ abbr {
   color: #fff;
 }
 .colored {
-  color: #ce3c83 !important;
+  color: var(--primary) !important;
 }
 .colored h1 {
-  color: #ce3c83 !important; 
+  color: var(--primary) !important; 
 }
 .color-primary {
   color: #151515;
@@ -634,7 +637,7 @@ abbr {
     color: #938e92;
 }
 .color-secondary a:hover{
-    color: #ce3c83;
+    color: var(--primary);
 }
 .color-grey {
   color: #f4ebf2 !important;
@@ -1257,7 +1260,7 @@ input[type="reset"],
 input[type="file"],
 button {
   background-image: none;
-  background: #ce3c83;
+  background: var(--primary);
   text-decoration: none !important;
   display: inline-block;
   position: relative;
@@ -1430,7 +1433,7 @@ fieldset[disabled] a.btn {
 /* - Buttons Color Scheme
 ------------------------------------------------------------- */
 .btn.btn-common {
-  background: #ce3c83;
+  background: var(--primary);
   color: #fff;
 }
 .btn.btn-common:hover {
@@ -5678,7 +5681,7 @@ tfoot {
 }
 #footer .widget-title,
 #footer.footer-dark .widget-title {
-  color: #ce3c83;
+  color: var(--primary);
 }
 #footer.footer-light .widget-title {
   color: rgba(0,0,0,0.8);
@@ -5728,7 +5731,7 @@ tfoot {
 /* -- Section Color / Shadow
 --------------------------------------------------------------*/
 .bg-accent {
-  background-color: #ce3c83 !important;
+  background-color: var(--primary) !important;
 }
 .bg-white {
   background-color: #fff !important;
@@ -5925,7 +5928,7 @@ tfoot {
 }
 .text-hover h3>a:hover,
 .text-hover h5>a:hover{
-  color: #ce3c83;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -5940,7 +5943,7 @@ tfoot {
   left: 0;
   bottom: 0;
   transition: 0.3s ease-out;
-  border-bottom: 2px solid #ce3c83;
+  border-bottom: 2px solid var(--primary);
 }
 
 .text-hover a.active:after,
@@ -5977,7 +5980,7 @@ tfoot {
     display: inline-block;
     padding: 0.75em 1.5em;
     cursor: pointer;
-    background: #ce3c83;
+    background: var(--primary);
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -6117,7 +6120,7 @@ tfoot {
    z-index: 9;
    height: 1px;
    width: 100%;
-   background-color: #ce3c83;
+   background-color: var(--primary);
 }
  .btn-hvr-effects3 > * > *:before {
    top: 0;
@@ -6137,7 +6140,7 @@ tfoot {
    z-index: 9;
    height: 100%;
    width: 1px;
-   background-color: #ce3c83;
+   background-color: var(--primary);
 }
  .btn-hvr-effects3 > * > * > *:before {
    left: 0;
@@ -6273,7 +6276,7 @@ tfoot {
     text-decoration: none;
 }
 .action-menu .icon.icon-shopping-cart:hover {
-    color: #ce3c83;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -6319,7 +6322,7 @@ a.nav-link {
 .navbar-nav .nav-item a.nav-link:focus,
 .navbar-nav .nav-item a.nav-link:hover,
 .navbar-nav .nav-item.active a.nav-link {
-  color: #ce3c83;
+  color: var(--primary);
 }
 @media screen and (max-width: 575px){
   .navbar #slide-navbar-collapse {
@@ -6403,7 +6406,7 @@ a.nav-link {
 .nav.nav-tabs .nav-link:focus, 
 .nav.nav-tabs .nav-link:hover,
 .nav.nav-tabs .nav-link.active {
-    color: #ce3c83;
+    color: var(--primary);
 }
 
 /* -- Best Products Section
@@ -6520,7 +6523,7 @@ a.magnific-popup:hover .overlay {
 }
 .testimonials-wrap .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: #ce3c83;
+    color: var(--primary);
 }
 .testimonials-wrap .slick-dots li button:before{
     color: #fff;
@@ -6757,7 +6760,7 @@ a.magnific-popup:hover .overlay {
 }
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: #ce3c83;
+    color: var(--primary);
 }
 /* nav dropdown menu */
 .navbar-nav ul.dropdown-menu li {
@@ -6804,12 +6807,38 @@ a.magnific-popup:hover .overlay {
 
 /* own */
 p.camshop-logo {
-  color: rgb(206, 60, 131);
+  color: var(--primary);
   font-weight: 500;
 }
 
 img.banner {
   width: 100%;
-  max-height: 500px;
+  max-height: 450px;
+  overflow: hidden;
   object-fit: cover;
+}
+
+img.singleImg {
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+img.member-image {
+  border-radius: 5px;
+}
+
+h2.about-us {
+  color: rgb(88, 88, 88);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+div.product-image {
+  border-radius: 5px;
+}
+
+div.product-desc {
+  border-radius: 5px;
 }
