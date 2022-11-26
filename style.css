@@ -615,10 +615,10 @@ abbr {
   color: #fff;
 }
 .colored {
-  color: var(--primary) !important;
+  color: white !important;
 }
 .colored h1 {
-  color: var(--primary) !important; 
+  color: #fff;
 }
 .color-primary {
   color: #151515;
@@ -6602,7 +6602,8 @@ a.magnific-popup:hover .overlay {
 /* - Page Banner Section
 --------------------------------------------------------------*/
 .site-banner{
-   background: url(images/banner.jpg) no-repeat; 
+   background: url(images/drink/banner__2.jpg) no-repeat center;
+   background-size: cover; 
    height: 567px;
 }
 .site-banner .banner-content {
