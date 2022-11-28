@@ -615,10 +615,10 @@ abbr {
   color: #fff;
 }
 .colored {
-  color: white !important;
+  color: var(--primary) !important;
 }
 .colored h1 {
-  color: #fff;
+  color: var(--primary) !important;
 }
 .color-primary {
   color: #151515;
